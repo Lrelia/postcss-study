@@ -1,0 +1,18 @@
+@define-mixin clearfix {
+	&:after {
+		display: table;
+		clear: both;
+		content: ' ';
+	}
+}
+.column-container {
+	color: #333;
+	@mixin clearfix;
+}
+.container {
+	display: flex;
+	height: 2rem;
+}
+.circle {
+	circle: 8rem #ccc;
+}
